@@ -3,20 +3,20 @@
 ## Overview of Project
 
 ### Purpose
-The purpose was to analyze a list of compiled Green Stocks for the year 2017 and the year 2018 to help Steven show his parents smarter investment choicer, by finding the return value over the course of a specific year. Also, a secondary goal was to create a streamed lined macro that can be expanded with data from more years and stocks.
+The purpose was to analyze a list of compiled Green Stocks for the year 2017 and the year 2018 to help the client show their parents smarter investment choices by finding the return value over the course of a specific year. Also, a secondary goal was to create a streamed lined macro that can be expanded with data from more years and stocks.
 
 ## Results
 <i>-Using images and examples of your code, compare the stock performance between 2017 and 2018, *as well as the execution times of the original script and the refactored script</i>
 
-The results of 2017 analysis shows several stocks DQ, SEDG, ENPH and FSLR with a returns of over 100%, and suggests that TERP (with negative return), AY and RUN with returns under 10% probably aren’t good investment choices. 
+The results of 2017 analysis shows several stocks DQ, SEDG, ENPH and FSLR with a returns of over 100% this suggests these would be good stocks to invest in. It also suggests that TERP (with negative return), AY and RUN with returns under 10% probably aren’t the best investment choices. 
 
-The results of 2018 show only ENPH and RUN with positive returns both around 80%, and all others having negative returns with JKS and DQ showing the biggest loss.
+The results of 2018 show only ENPH and RUN with positive returns both around 80% suggesting these are the only two 'safe bets.' However, while all others have negative returns, JKS and DQ showing the biggest losses suggesting these two are would be the worst investment choice of the bunch.
 
 ![Image](https://github.com/trosie3/stocks-analysis/blob/main/Resources/VBA_Challenge_2017data.png) ![Image](https://github.com/trosie3/stocks-analysis/blob/main/Resources/VBA_Chellenge_2018data.png)
 
-However, the combined data suggests that ENPH and RUN both having positive returns both years are the safest investment. Of the two ENPH appears to be the safest as will RUN increase from 5 to 84, ENHP decreased from 130 to 82 which is a smaller variance and higher overall return in the two years. Returns found by utilizing for loops to go through each stock and dividing the ending price of a specific stock (ticker) by the starting price and subtracting one. 
+However, the combined data suggests that ENPH and RUN both having positive returns both years are the safest investment. Of the two ENPH appears to be the safest because, while RUN increased from around 6 to 84 and ENHP decreased from around 130 to around 82, it fluctuated the least and had the higher overall return in the two years. 
 
-*By refactoring the previous skripts and creating one continuous loop, code seen below images, to process the stock data according to my computer I was able to cut run time of the original skirt by about 0.05 seconds, which would add up dramatically if the data set was increased to have more stocks. Run times of final script in following images.
+*By refactoring the previous scripts and creating one continuous loop, code seen below images, to process the stock data according to my computer I was able to cut run time of the original script by about 0.05 seconds, which would add up dramatically if the data set was increased to have more stocks or more years added to analyze. Run times of final script in following images.
 
 ![image](https://github.com/trosie3/stocks-analysis/blob/main/Resources/VBA_Challenge_2017.png) ![image](https://github.com/trosie3/stocks-analysis/blob/main/Resources/VBA_Challenge_2018.png)  
 
@@ -63,4 +63,4 @@ However, the combined data suggests that ENPH and RUN both having positive retur
 1.	What are the advantages or disadvantages of refactoring code?
 2.	How do these pros and cons apply to refactoring the original VBA script?
 
-Advantages for refactoring code into one or fewer subroutine(s) from many is that it allows for better and easier future use by the creator, and is more user friendly to others either utilizing the macro as an end-user or others who many need to go in and tweak the code. It also allows you to find redundancies and way to speed up the program. By refactoring the code from the original script in this project the major advantage is more data can be added, and really more data is needed to truly determine which of these stocks are the least risky, highest risk, etc. in order for an investor to make a more informed decision. 
+Advantages for refactoring code into one, or fewer, subroutine(s) from many is that it allows for better and easier future use by the creator, and is more user friendly to others either utilizing the macro as an end-user or others who many need to go in and tweak the code. It also allows you to find redundancies and ways to make the macro more efficient. By refactoring the code from the original script in this project the major advantage is that more data can be added, and really more data is needed to truly determine which of these stocks are the least risky, highest risk, etc. in order for an investor to make a more informed decision. I.E. by having one macro that can run any year rather than one specific year the data can be compiled quicker, as any year can be added for the same stocks without needing to recode the macro or create another macro.

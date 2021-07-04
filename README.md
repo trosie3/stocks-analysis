@@ -6,18 +6,20 @@
 The purpose was to analyze a list of compiled Green Stocks for the year 2017 and the year 2018 to help Steven show his parents smarter investment choicer, by finding the return value over the course of a specific year. Also, a secondary goal was to create a streamed lined macro that can be expanded with data from more years and stocks.
 
 ## Results
--Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script
+<i>-Using images and examples of your code, compare the stock performance between 2017 and 2018, *as well as the execution times of the original script and the refactored script</i>
 
 The results of 2017 analysis shows several stocks DQ, SEDG, ENPH and FSLR with a returns of over 100%, and suggests that TERP (with negative return), AY and RUN with returns under 10% probably aren’t good investment choices. 
 
 The results of 2018 show only ENPH and RUN with positive returns both around 80%, and all others having negative returns with JKS and DQ showing the biggest loss.
 
+![Image](https://github.com/trosie3/stocks-analysis/blob/main/Resources/VBA_Challenge_2017data.png) ![Image](https://github.com/trosie3/stocks-analysis/blob/main/Resources/VBA_Chellenge_2018data.png)
+
 However, the combined data suggests that ENPH and RUN both having positive returns both years are the safest investment. Of the two ENPH appears to be the safest as will RUN increase from 5 to 84, ENHP decreased from 130 to 82 which is a smaller variance and higher overall return in the two years. Returns found by utilizing for loops to go through each stock and dividing the ending price of a specific stock (ticker) by the starting price and subtracting one. 
 
-  <i>Returns results found by utilizing for loops to go through each stock and dividing the ending price of a specific stock (ticker) by the starting price and subtracting one, see code below.</i>
+*By refactoring the previous skripts and creating one continuous loop, code seen below images, to process the stock data according to my computer I was able to cut run time of the original skirt by about 0.05 seconds, which would add up dramatically if the data set was increased to have more stocks. Run times of final script in following images.
 
-By refactoring the code and creating one continuous loop, seen below images, to process the stock data according to my computer I was able to cut run time of the original skirt by about 0.05 seconds, which would add up dramatically if the data set was increased. 
-  
+![image](https://github.com/trosie3/stocks-analysis/blob/main/Resources/VBA_Challenge_2017.png) ![image](https://github.com/trosie3/stocks-analysis/blob/main/Resources/VBA_Challenge_2018.png)  
+
     For i = 0 To 11
        
        tickerIndex = tickers(i)
@@ -57,7 +59,7 @@ By refactoring the code and creating one continuous loop, seen below images, to 
 
     Next i	
 
-##Summary
+## Summary
 1.	What are the advantages or disadvantages of refactoring code?
 2.	How do these pros and cons apply to refactoring the original VBA script?
 

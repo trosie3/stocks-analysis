@@ -1,6 +1,7 @@
 # Green Stocks Analysis
 
 ## Overview of Project
+Creating a macro to analyze Green Stocks data for trends.
 
 ### Purpose
 The purpose was to analyze a list of compiled Green Stocks for the year 2017 and the year 2018 to help the client show their parents smarter investment choices by finding the return value over the course of a specific year. Also, a secondary goal was to create a streamed lined macro that can be expanded with data from more years and stocks.
